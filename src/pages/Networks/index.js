@@ -14,9 +14,9 @@ getDoc
 } from 'firebase/firestore'
 
 export default function Networks(){
-    const[facebook,setFacebook] =useState("") ;
+  
     const[instagram,setInstagram] =useState("") ;
-    const[github,setGithub] =useState("") ;
+    const[github,setGithub] = useState("") ;
     const [linkedin,setLinkedin] = useState("");
 
     useEffect(() =>{
@@ -36,7 +36,7 @@ export default function Networks(){
         loadLinks();
     },[])
 
-    async function handleSave(e){
+   function handleSave(e){
         e.preventDefault();
 
 setDoc(doc(db,"social","link"),{
@@ -75,9 +75,9 @@ toast.success("SALVO COM SUCESSO!")
             value={instagram}
             onChange={(e) => setInstagram(e.target.value)}
             />
+       
             <label className="label">Link do Github</label>
-
-            <Input
+             <Input
             placeholder = "Digite url do Github"
             value={github}
             onChange={(e) => setGithub(e.target.value)}
