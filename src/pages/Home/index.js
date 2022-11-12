@@ -15,7 +15,29 @@ export default function Home() {
   const [links, setLinks] = useState([]);
 const [socialLinks,setSocialLinks] = useState({})
 
-  
+  useEffect(() => {
+    function loadLinks() {
+      const linksRef = collection(db, "links");
+      const queryRef = query(linksRef, orderBy("created", "asc"));
+
+      getDocs(queryRef).then((snapshot) => {
+        let lista = [];
+
+        snapshot.forEach((doc) => {
+          lista.push({
+            id: doc.id,
+            name: doc.data().name,
+            urlInput: doc.data().urlInput,
+            bg: doc.data().bg,
+            color: doc.data().color,
+          });
+        });
+        setLinks(lista);
+      });
+    }
+    loadLinks();
+  }, []);
+
  useEffect(() =>{
   function loadSocialLinks(){
     const docRef = doc(db,"social", "link")
