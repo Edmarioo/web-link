@@ -45,7 +45,7 @@ const [socialLinks,setSocialLinks] = useState({})
     .then((snapshot) =>{
       if(snapshot.data() !== undefined){
         setSocialLinks({
-          facebook: snapshot.data().facebook,
+        
           instagram: snapshot.data().instagram,
           github:snapshot.data().github,
           linkedin:snapshot.data().linkedin

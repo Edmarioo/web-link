@@ -25,7 +25,7 @@ export default function Networks(){
           getDoc(docRef)
           .then((snapshot)=>{
           if(snapshot.data() != undefined){
-            setFacebook(snapshot.data().facebook)
+       
             setInstagram(snapshot.data().instagram)
             setGithub(snapshot.data().github)
             setLinkedin(snapshot.data().linkedin)
@@ -40,7 +40,7 @@ export default function Networks(){
         e.preventDefault();
 
 setDoc(doc(db,"social","link"),{
-    facebook:facebook,
+   
     instagram:instagram,
     github:github,
     linkedin:linkedin
@@ -65,13 +65,8 @@ toast.success("SALVO COM SUCESSO!")
        
         <form className="form" onSubmit={handleSave}>
        
-            <label className="label">Link Facebook</label>
-
-            <Input
-            placeholder = "Digite url do Facebook..."
-            value={facebook}
-            onChange={(e) => setFacebook(e.target.value)}
-            />
+           
+           
        
             <label className="label">Link Instagram</label>
 
