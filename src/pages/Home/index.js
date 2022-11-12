@@ -54,7 +54,7 @@ const [socialLinks,setSocialLinks] = useState({})
     })
   }
   loadSocialLinks();
- })
+ },[])
   return (
     <div className="home-container">
       <h1>Edmario Santos</h1>
