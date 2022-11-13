@@ -51,7 +51,7 @@ const [socialLinks,setSocialLinks] = useState({})
           linkedin:snapshot.data().linkedin
         })
       }
-    })
+    },[])
   }
   loadSocialLinks();
  },[])
