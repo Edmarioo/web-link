@@ -61,7 +61,7 @@ const [socialLinks,setSocialLinks] = useState({})
   return (
     <div className="home-container">
        <img src="https://avatars.githubusercontent.com/u/29990219?v=4" className="img-perfil"/>
-      <h1>EDMARIO SANTOS</h1>
+      <h1 className="text-name">EDMARIO SANTOS</h1>
       <span>Veja meus Links & Projetos 👇</span>
       <main className="links">
         {links.map((item) => (

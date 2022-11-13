@@ -29,9 +29,10 @@
     text-align: center;
 
 }
+
 .img-perfil{
-    width: 200px; /* width of container */
-    height: 200px; /* height of container */
+    width: 130px; /* width of container */
+    height: 130px; /* height of container */
     object-fit: cover;
     border-radius: 60%;
 }
