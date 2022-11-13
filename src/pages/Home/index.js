@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+
 import "./home.css";
 import { Social } from "../../componentes/Social";
+
 import {
   getDocs,
   collection,
@@ -10,7 +12,8 @@ import {
   getDoc,
 } from "firebase/firestore";
 import { db } from "../../services/firebaseConnection";
-import { FaInstagram, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub, FaFacebook, FaLongArrowAltRight } from "react-icons/fa";
+
 export default function Home() {
   const [links, setLinks] = useState([]);
 const [socialLinks,setSocialLinks] = useState({})
@@ -57,8 +60,9 @@ const [socialLinks,setSocialLinks] = useState({})
  },[])
   return (
     <div className="home-container">
-      <h1>Edmario Santos</h1>
-      <span>Veja meus Links 👇</span>
+       <img src="https://avatars.githubusercontent.com/u/29990219?v=4" className="img-perfil"/>
+      <h1>EDMARIO SANTOS</h1>
+      <span>Veja meus Links & Projetos 👇</span>
       <main className="links">
         {links.map((item) => (
           <section

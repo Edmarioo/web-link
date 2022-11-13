@@ -29,7 +29,15 @@
     text-align: center;
 
 }
-
+.img-perfil{
+    width: 200px; /* width of container */
+    height: 200px; /* height of container */
+    object-fit: cover;
+    border-radius: 60%;
+}
+.img-perfil:hover{
+    transform: scale(1.04);
+}
 .link-area{
     background-color: #fff;
     width: 100%;
