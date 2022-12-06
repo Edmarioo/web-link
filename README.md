@@ -3,9 +3,9 @@
 
 Projeto com intuito de centralizar os links de alguns  projetos que desenvolvo.
 
-Projeto feito desenvolvido na semana de imersão do Sujeito Programador
+Projeto desenvolvido na semana de imersão do Sujeito Programador.
 
-Tecnologias: React,Html,Css,Firebase,Github
+Tecnologias: Reactjs,Html,Css,Firebase,Github
 
 ## Screenshots
 
